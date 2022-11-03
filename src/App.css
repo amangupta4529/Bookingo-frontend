@@ -1,0 +1,26 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+*{
+    box-sizing: border-box;
+}
+.loading{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.example {
+    background-color: #eee;
+    width: 200px;
+    height: 100px;
+    border: 1px dotted black;
+    overflow-y: scroll; /* Add the ability to scroll */
+  }
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .example::-webkit-scrollbar {
+      display: none;
+  }
+ 

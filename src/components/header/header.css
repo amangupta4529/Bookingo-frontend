@@ -1,0 +1,290 @@
+.header {
+  background-color: #003580;
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+}
+.dateBlock{
+  display: inline;
+  display: flex;
+  flex-direction: row;
+}
+#seprator{
+  display: inline;
+  cursor: pointer;
+    color: black;
+    font-weight:550 ;
+    margin: 0px 3px 0px 3px;
+}
+.partition {
+  margin-left: 10px;
+  width: 100%;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.headerList::-webkit-scrollbar {
+    display: none;
+}
+
+.headerContainer {
+  width: 100%;
+  max-width: 1024px;
+  margin: 20px 0px 100px 0px;
+}
+
+.headerContainer.listMode {
+  margin: 20px 0px 0px 0px;
+}
+
+.headerList {
+  display: flex;
+  margin-bottom: 50px;
+  width: 100%;
+  overflow-x: scroll;
+}
+.header-svg{
+  margin-right: 20px;
+}
+.headerListItem {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  min-width: 100px;
+  margin-left: 30px;
+}
+
+.headerListItem.active {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.headerDesc {
+  margin: 20px 0px;
+}
+
+.headerBtn {
+  background-color: #0071c2;
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.headerBtns {
+  background-color: #0071c2;
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+.headerSearch {
+  box-sizing: border-box;
+  height: 60px;
+  background-color: white;
+  border: 2px solid #febb02;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -25px;
+  width: 80%;
+  left:10%;
+  /* max-width: 700px; */
+}
+
+.headerSearchText{
+  width: 50%;
+}
+.headerBtn{
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-width: 935px) {
+  .iconCover{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: absolute;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 100px;
+    background-color: rgb(247, 236, 236);
+  }
+  .dateBox {
+    left: 0px;
+    top: 150px !important;
+    width: 100%;
+  }
+  .date{
+    width: 100%;
+    top: 100px;
+  }
+  .rdrMonth{
+    width: 100% !important;
+  }
+  
+  #seprator{
+    display: none;
+  }
+  .headerContainer{
+    width:90% ;
+  }
+  .headerSearch{
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+    border: 0px;
+    height: 300px;
+    padding: 0px;
+    top: 20%;
+    left: 0px;
+    align-items: center;
+  }
+  .dateBlock{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+  }
+  .datetext{
+    width: 100%;
+    border: 3px solid #febb02;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .btndiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #minheaderSearchItem{
+    width: 100%;
+    background-color: white;
+    border: 3px solid #febb02;
+    font-size: 20px;
+    padding: 10px;
+  }
+  .headerSearchInput{
+    width: 100%;
+  }
+  .options {
+    position: absolute;
+    top: 220px !important;
+    width: 100%;
+    left: 0px !important;
+    right: unset !important;
+  }
+}
+
+.headerSearchInput::placeholder{
+  font-size: 13px;
+  color: black;
+  font-weight: 550;
+}
+.headerIcon {
+  color: black;
+  margin-left: 2px;
+}
+
+.headerSearchItem {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border: 3px solid #febb02;
+}
+
+.headerSearchInput {
+  border: none;
+  height: 100%;
+  width: 100%;
+  outline: none;
+}
+
+.headerSearchText {
+  cursor: pointer;
+  font-size: 13px;
+  color: black;
+  font-weight: 550;
+}
+
+.dateBox {
+  position: absolute;
+  top: 50px;
+  z-index: 2;
+  
+}
+
+.options {
+  z-index: 2;
+  position: absolute;
+  top: 60px;
+  right: 15%;
+  background-color: white;
+  color: gray;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.optionItem {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.optionCounter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: black;
+}
+
+.optionCounterButton {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #0071c2;
+  color: #0071c2;
+  cursor: pointer;
+  background-color: white;
+}
+
+.optionCounterButton:disabled {
+  cursor: not-allowed;
+}
+.part1{
+  width: 40%;
+}
+.part2{
+  width: 26%;
+}
+.part3{
+  width: 20%;
+}.part4{
+  width: 14%;
+}
+.dateclose{
+  z-index: 2;
+  color: blue;
+}
+.iconCover{
+  display: none;
+  
+}
