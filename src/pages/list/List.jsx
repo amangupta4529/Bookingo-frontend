@@ -27,7 +27,6 @@ const List = () => {
     dispatch({ type: "NEW_SEARCH", payload: { destination, "dates":date, options } });
     reFetch();
   };
-
   return (
     <div className="hotelListBox"> 
       <Navbar />
@@ -51,7 +50,7 @@ const List = () => {
                   onChange={(item) => {
                     setDate([item.selection])
                     dispatch({ type: "NEW_SEARCH", payload: { destination, "dates":date, options } });
-                    console.log(dates);
+
                   }
                 }
                   editableDateInputs={true}

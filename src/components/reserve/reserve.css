@@ -1,4 +1,6 @@
+
 .reserve {
+  box-sizing: border-box;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.418);
@@ -11,8 +13,8 @@
 }
 
 .rContainer {
-  height: 70vh;
-  width: 40%;
+  height: 90vh;
+  width: 50%;
   min-width: 300px;
   background-color: white;
   padding: 20px;
@@ -29,13 +31,13 @@
   display: none;
 }
 .rClose {
-  position: absolute;
-  top: 10px;
-  right: 10px;
   cursor: pointer;
 }
 
 .rItem {
+  margin-top: 5px;
+  border-radius: 25px;
+  background-color: rgb(251, 245, 245);
   display: flex;
   align-items: center;
   gap: 50px;
@@ -50,10 +52,13 @@
 
 .rTitle {
   font-weight: 500;
+  color: blue;
+  text-transform: capitalize;
 }
 
 .rDesc {
   font-weight: 300;
+  text-transform: capitalize;
 }
 
 .rMax {
@@ -61,17 +66,21 @@
 }
 
 .rPrice {
-  font-weight: 500;
+  font-weight: 700;
+  font-size: large;
+  color: green;
 }
 
 .rSelectRooms{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-  font-size: 8px;
-  color: gray;
+display: flex;
+flex-wrap: wrap;
+gap: 5px;
+font-size: 8px;
+justify-content: flex-start;
+width: 30%;
+color: gray;
+align-items: flex-start;
 }
-
 .room{
   display: flex;
   flex-direction: column;
@@ -85,6 +94,34 @@
   font-weight: bold;
   cursor: pointer;
   border-radius: 5px;
-  width: 100%;
+  width: 50%;
   margin-top: 20px;
+  max-width: 430px;
+  min-width: none;
+}
+.rItemInfo{
+  width: 70%;
+}
+.mHead{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+ 
+}
+.headText{
+  font-size: larger;
+  font-weight: 700;
+  color: blueviolet;
+}
+.modalFooter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.loading_icon{
+  position: absolute;
+  top:50%;
+  z-index: 2;
 }

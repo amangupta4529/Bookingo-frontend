@@ -47,7 +47,8 @@
 }
 .bookimg{
     width:100%;
-    object-fit: fill;
+    height: 100%;
+    object-fit:fill;
 }
 .form-box{
     display: flex;
@@ -106,3 +107,26 @@
     background-color: #547098;
     
 }
+.left-side{
+    width: 50%;
+    height: 100%;
+  }
+  .right-side{
+    width: 50%;
+    height: 100%;
+  }
+@media only screen and (max-width: 500px) {
+    .container{
+      flex-direction: column !important;
+    }
+    .parts{
+      width: 100% !important;
+      height: 100vh !important;
+    }
+    .reg-cont{
+      height: 100% !important;
+  }
+  .left-side{
+    display: none;
+    }
+  }

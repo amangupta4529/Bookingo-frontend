@@ -11,6 +11,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
+      <div className="nav-partition">
       <Header/>
       <div className="homeContainer">
         <Featured/>
@@ -20,6 +21,7 @@ const Home = () => {
         <FeaturedProperties/>
         <MailList/>
         <Footer/>
+      </div>
       </div>
     </>
   );

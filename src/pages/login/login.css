@@ -1,4 +1,4 @@
-.login {
+/* .login {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -9,6 +9,10 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+} */
+.login-cont{
+  height: 100vh;
+  width: 100%;
 }
 
 .lInput{
@@ -54,4 +58,12 @@
 .err{
   color: red;
   text-align: center;
+}
+.left-side{
+  width: 50%;
+  height: 100%;
+}
+.right-side{
+  width: 50%;
+  height: 100%;
 }

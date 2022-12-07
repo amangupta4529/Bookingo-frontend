@@ -11,7 +11,7 @@ const Login = () => {
     username: undefined,
     password: undefined,
   });
-   const url="https://bookingo.herokuapp.com/api/auth/login";
+   const url="https://bookingo-backend.onrender.com/api/auth/login";
   //  const host="http://localhost:5000/api";
   
   const { loading, error, dispatch } = useContext(AuthContext);
@@ -37,15 +37,15 @@ const Login = () => {
 
   return (
     
-    <div className='reg-cont'>
+    <div className='login-cont'>
         <Nav type="register"/>
         <div className="container">
-            <div className="left-side parts">
+            <div className="left-side ">
               <div className="imgleft">
                 <img src={lpy} className='bookimg'></img>
               </div>
             </div>
-        <div className='form-cont right-side parts'>
+        <div className='form-cont right-side '>
             <h2>Login</h2>
         <form className='login-form' >
         

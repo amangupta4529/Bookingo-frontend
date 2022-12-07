@@ -39,12 +39,12 @@ export default function Register() {
   //         img.setAttribute("src", reader.result);
   //       });
   //       setprofile(reader.result);
-  //       console.log();
+  //       
   //       reader.readAsDataURL(choosedFile);
   //     }
   //   });
   // })
-  const url="https://bookingo.herokuapp.com/api/auth/register"
+  const url="https://bookingo-backend.onrender.com/api/auth/register"
   const handleChange=(e)=>{
     const value=e.target.value;
     const name=e.target.id;
@@ -53,7 +53,7 @@ export default function Register() {
   const uploadPhoto= async(e)=>{
     
     const data = new FormData();
-    console.log(profile);
+    
     data.append("file", e.target.files[0]);
     data.append("upload_preset", "ncjn97qk");
     dispatch({type:"LOADING_START"})
@@ -89,12 +89,12 @@ export default function Register() {
     <div className='reg-cont'>
         <Nav type="login"/>
         <div className="container">
-            <div className="left-side parts">
+            <div className="left-side ">
               <div className="imgleft">
                 <img src={lpy} className='bookimg'></img>
               </div>
             </div>
-        <div className='form-cont right-side parts'>
+        <div className='form-cont right-side '>
             <h2>Sign in or create an account</h2>
         <form className='reg-form' onSubmit={handleSubmit}>
         <div className="profile">
@@ -116,7 +116,7 @@ export default function Register() {
                     accept="Image/"
                     onChange={(e) => {
                       setprofile(e.target.files)
-                      console.log(profile);
+                      
                       uploadPhoto(e);
                     }
                       

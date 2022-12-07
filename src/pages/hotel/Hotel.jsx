@@ -29,7 +29,6 @@ const Hotel = () => {
   const navigate = useNavigate();
 
   const { dates, options } = useContext(SearchContext);
-  console.log(dates);
   const MILLISECONDS_PER_DAY = 1000 * 60 * 60 * 24;
   function dayDifference(date1, date2) {
     const timeDiff = Math.abs(date2.getTime() - date1.getTime());
@@ -37,7 +36,7 @@ const Hotel = () => {
     return diffDays;
   }
 
-  const days = dayDifference(dates[0].endDate, dates[0].startDate);
+  const days = dayDifference(dates[0].endDate, dates[0].startDate)+1;
 
   const handleOpen = (i) => {
     setSlideNumber(i);
@@ -119,7 +118,7 @@ const Hotel = () => {
                   <img
                     onClick={() => handleOpen(i)}
                     src={photo}
-                    alt=""
+                    alt={data.name}
                     className="hotelImg"
                   />
                 </div>
@@ -128,7 +127,7 @@ const Hotel = () => {
             <div className="hotelDetails">
               <div className="hotelDetailsTexts">
                 <h1 className="hotelTitle">{data.title}</h1>
-                <p className="hotelDesc">{data.desc}</p>
+                <p className="hotelDescp">{data.desc}</p>
               </div>
               <div className="hotelDetailsPrice">
                 <h1>Perfect for a {days}-night stay!</h1>
@@ -137,7 +136,7 @@ const Hotel = () => {
                   excellent location score of 9.8!
                 </span>
                 <h2>
-                  <b>${(days+1) * data.cheapestPrice * options.room}</b> ({days+1}{" "}
+                  <b>&#8377; {(days) * data.cheapestPrice * options.room}</b> ({days}{" "}
                   nights)
                 </h2>
                 <button onClick={handleClick}>Reserve or Book Now!</button>

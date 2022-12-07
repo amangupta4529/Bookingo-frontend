@@ -11,10 +11,15 @@ import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
 import {SyncLoader} from "react-spinners"
 import {AuthContext}  from "./context/AuthContext"
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import Header from "./components/header/Header";
+import { loadScript } from "./functions/Payment";
 function App() {
   const {loading} = useContext(AuthContext)
+  useEffect(() => {
+   loadScript("https://checkout.razorpay.com/v1/checkout.js")
+  })
+  
   return (
     <div className="mainscreen">
         {loading && <div className="loading">

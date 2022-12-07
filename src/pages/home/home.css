@@ -11,3 +11,12 @@
   font-size: 20px;
   padding: 40px;
 }
+.nav-partition{
+  height:92vh;
+  overflow-x: scroll;
+}
+
+.nav-partition::-webkit-scrollbar {
+  display: none;
+}
+

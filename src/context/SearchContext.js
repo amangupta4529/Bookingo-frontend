@@ -2,11 +2,15 @@ import { createContext, useReducer } from "react";
 
 const INITIAL_STATE = {
   city: undefined,
-  dates: [],
+  dates: [{
+    startDate: new Date(),
+    endDate: new Date(),
+    key: "selection",
+  }],
   options: {
     adult: undefined,
     children: undefined,
-    room: undefined,
+    room: 1,
   },
 };
 
@@ -39,9 +43,6 @@ export const SearchContextProvider = ({ children }) => {
     </SearchContext.Provider>
   );
 };
-
-
-
 
 
 

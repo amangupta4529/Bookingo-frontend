@@ -3,7 +3,7 @@
   max-width: 1024px;
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 10px;
   overflow-x: scroll;
 
 }
@@ -12,10 +12,9 @@
 }
 .pListItem{
   width: 200px;
-  border-radius: 10px;
   cursor: pointer;
   position: relative;
-    color: white;
+  color: white;
     border-radius: 10px;
     overflow: hidden;
     min-width: 200px;

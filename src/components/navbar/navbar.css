@@ -17,7 +17,7 @@
 
 .logo{
   font-size: larger;
-  font-weight: 500;
+  font-weight: 600;
 }
 .logout{
   display: flex;
@@ -30,7 +30,7 @@
 .logout-btn{
   height: 30px;
   width: 90px;
-  border: 1px solid white;
+  border: 2px solid yellow;
   color: white;
   border-radius: 15px;
   display: flex;
@@ -39,16 +39,70 @@
   margin-left: 20px;
   cursor: pointer;
 }
+.profModal{
+  background-color: white;
+  color: black;
+  width: 100px;
+  position: absolute;
+  top: 55px;
+  z-index: 2;
+}
+.liOptions{
+  padding: 5px;
+  border-bottom: 1px solid grey;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
 
+}
+.liOptions:hover{
+  background-color: whitesmoke;
+}
 .navButton{
   margin-left: 20px;
   border: none;
   padding: 5px 10px;
   cursor: pointer;
-  color: #003580;
+  color: white;
+  font-weight: 500;
+  background-color: #003580;
+  border: 2px solid #febb02;
 }
 .username{
   text-transform: capitalize;
+}
+.profile-but{
+  display: flex;
+
+}
+.pIcon{
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:100px ;
+  background-color: rgb(205, 209, 213);
+}
+.profilePic{
+  height: 40px;
+  width: 40px;
+  object-fit: fill;
+  border-radius: 50px;
+  border: 2px solid #febb02; 
+}
+.userLevel{
+  color: #febb02;
+}
+.profileRight{ 
+  margin-left: 5px;
+  height: 40px;
+  width: 100px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.profile-but:hover{
+  color: #febb02;
 }
 @media only screen and (max-width: 935px) {
   .navContainer{

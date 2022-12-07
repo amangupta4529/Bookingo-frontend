@@ -12,12 +12,13 @@
   flex-direction: column;
   gap: 10px;
   position: relative;
+  padding: 20px;
 }
 
 .bookNow {
   position: absolute;
   top: 10px;
-  right: 0;
+  right: 20px;
   border: none;
   padding: 10px 20px;
   background-color: #0071c2;
@@ -53,6 +54,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%;
+
 }
 
 .hotelImgWrapper {
@@ -61,8 +64,9 @@
 
 .hotelImg {
   width: 100%;
-  object-fit: cover;
+  object-fit: fill;
   cursor: pointer;
+  height: 100%;
 }
 
 .hotelDetails {
@@ -131,8 +135,9 @@
 }
 
 .sliderImg{
-  width: 80%;
-  height: 80vh;
+    width: 80%;
+    height: 80vh;
+    object-fit: contain;
 }
 
 .close{
@@ -149,4 +154,10 @@
   font-size: 50px;
   color: lightgray;
   cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  .hotelDetails{
+    flex-direction: column;
+  }
+
 }

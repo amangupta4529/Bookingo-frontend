@@ -3,7 +3,7 @@
   max-width: 1024px;
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 10px;
   z-index: 1;
   overflow-x: scroll;
 }
@@ -14,7 +14,6 @@
 .featuredItem{
   position: relative;
   color: white;
-  border-radius: 10px;
   overflow: hidden;
   height: 250px;
   min-width: 200px;
